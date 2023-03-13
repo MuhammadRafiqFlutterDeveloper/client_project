@@ -1,8 +1,11 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:precises/constant.dart';
 import 'package:precises/screens/login.dart';
+
+import 'home_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
   @override
@@ -257,6 +260,8 @@ class _LoginFormState extends State<LoginForm> {
                         print('Name: $_nameError');
                         print('Email: $_emailError');
                         print('Password: $_passwordError');
+                      } else {
+                       Get.to(HomePage());
                       }
                     },
                     child: Text(
@@ -289,11 +294,7 @@ class _LoginFormState extends State<LoginForm> {
                         TextSpan(
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => LoginScreen()),
-                              );
+                            Get.to(LoginScreen());
                             },
                           text: 'Sign In',
                           style: GoogleFonts.getFont(

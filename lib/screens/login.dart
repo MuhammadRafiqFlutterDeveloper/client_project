@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:precises/constant.dart';
 import 'package:precises/screens/signup.dart';
@@ -308,11 +309,7 @@ class _LoginFormState extends State<LoginForm> {
                           TextSpan(
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => SignUpScreen()),
-                                );
+                              Get.to(SignUpScreen());
                               },
                             text: 'Sign Up',
                             style: GoogleFonts.getFont(

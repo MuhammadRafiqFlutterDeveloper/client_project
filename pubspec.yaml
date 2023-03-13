@@ -37,6 +37,22 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts:
   get:
+#  latlong2:
+  flutter_map:
+#  flutter_google_places:
+#  geolocator:
+#  google_api_headers:
+#  google_maps_webservice:
+  get_storage: ^2.0.3
+#  flutter_polyline_points: ^0.2.5
+#  google_maps_flutter: ^2.1.0
+  location: any
+#  permission_handler: ^10.0.0
+#  geolocator: ^9.0.1
+  google_maps_flutter:
+#  google_maps_js: ^0.3.0
+  geocoding:
+  google_maps_flutter_web: ^0.3.2+2
 dev_dependencies:
   flutter_test:
     sdk: flutter
