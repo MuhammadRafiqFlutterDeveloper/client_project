@@ -50,6 +50,7 @@ dependencies:
 #  permission_handler: ^10.0.0
 #  geolocator: ^9.0.1
   google_maps_flutter:
+  provider:
 #  google_maps_js: ^0.3.0
   geocoding:
   google_maps_flutter_web: ^0.3.2+2
