@@ -4,10 +4,12 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:precises/constant.dart';
 import 'package:precises/screens/login.dart';
+import 'package:precises/screens/responsible.dart';
 
-import 'home_screen.dart';
+import 'controller.dart';
 
 class SignUpScreen extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +61,7 @@ class _LoginFormState extends State<LoginForm> {
     _confirmPasswordController.dispose();
     super.dispose();
   }
-
+  final HomePageController controller = Get.put(HomePageController());
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -261,7 +263,7 @@ class _LoginFormState extends State<LoginForm> {
                         print('Email: $_emailError');
                         print('Password: $_passwordError');
                       } else {
-                       Get.to(HomePage());
+                       Get.to(ResponsiveLayout(controller: controller,));
                       }
                     },
                     child: Text(

@@ -44,7 +44,7 @@ class _LayoutHomeState extends State<LayoutHome> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
+      // width: MediaQuery.of(context).size.width,
       child: CheckboxListTile(
         key: _key,
         controlAffinity: ListTileControlAffinity.leading,
